@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Noom
+        link(rel="shortcut icon", href="public/img/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href='/public/css/styles.css')
+    body 
+        header 
+            h1 Noom
+        main
+            div#toast
+            div#welcome
+                div#welcome-userinfo
+                    form#welcome-userinfo__form
+                        input(placeholder="nickname", required, type="text")
+                        button Set Nickname
+                    
+                div#welcome-socketIO
+                    form#welcome-socketIO__form
+                        input(placeholder="room name", required, type="text")
+                        button Enter chatroom
+
+                div#welcome-webRTC
+                    form#welcome-webRTC__form
+                        input(placeholder="room name", required, type="text")
+                        button Enter video chatroom
+
+                div#OpenRoomDiv
+                    div#OpenRoomTitle
+                        h4 Open Rooms
+                    div#OpenRoomList
+                        ul#roomsList
+            
+                    
+
+
+
+        script(src="/socket.io/socket.io.js")
+        script(src="public/js/app.js")
+        script(src='https://kit.fontawesome.com/5e164c00b3.js' crossorigin='anonymous')

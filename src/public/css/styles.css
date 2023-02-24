@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "variables.css";
+/* Components */
+@import "components/chat.css";
+@import "components/toast.css";
+
+/* Screens */
+@import "screens/welcome.css";
+@import "screens/chatroom.css";
+@import "screens/vcroom.css";
+
+.body {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.main-screen {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

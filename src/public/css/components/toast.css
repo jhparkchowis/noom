@@ -1,0 +1,25 @@
+#toast {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+    transform: translate(-50%, 10px);
+    border-radius: 30px;
+    overflow: hidden;
+    font-size: 15x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: visibility 0.5s, transform 0.5s;
+    background: rgba(0, 0, 0, 0.3);
+    color: black;
+    z-index: 10000;
+}
+
+#toast.reveal {
+    visibility: visible;
+    transform: translate(-50%, 0)
+}
